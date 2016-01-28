@@ -40,6 +40,30 @@
 
 $route['default_controller'] = "welcome";
 $route['404_override'] = '';
+$route['first'] = 'first';
+$route['lock/(:any)/(:any)'] = "welcome/shucks";
+$route['sleep'] = "first/zzz";
+$route['last'] = 'last';
+
+$route['show/(:num)'] = "first/gimme/$1";
+
+$route['((comp)(\d{4}))/wisdom'] = "wise/bingo";
+
+//This function is used for link #6 and uses callback routing.
+$route['dunno'] = function ()
+{
+    $source = "./data/CuteKitty.jpg";
+    if (!file_exists($source)) { show_404($source); }
+    //$mimeType = get_mime_by_extension($source);
+    header("Content-type: " . "image/jpeg");
+    header('Content-Disposition: inline');
+    readfile($source);
+};
+
+$route['[a-z]{4}/bingo'] = "bingo/index";
+
+
+
 
 
 /* End of file routes.php */

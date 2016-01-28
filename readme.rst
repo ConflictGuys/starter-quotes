@@ -59,6 +59,6 @@ CodeIgniter is a project of B.C.I.T.
 ***************
 Work Allocation
 ***************
-MW - 3, 6, 8 links
-SS - 2, 5, 7 links
+SS - 3, 6, 8 links
+MW - 2, 5, 7 links
 KP - Team Rep Owner, 1 and 4 link
