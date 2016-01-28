@@ -12,10 +12,10 @@ class Last extends Application {
         parent::__construct();
     }
 
-    //-------------------------------------------------------------
-    //  The normal pages
-    //-------------------------------------------------------------
-
+    /**
+     * This function is associated with the 'last' link nav-bar button and loads
+     * the last quote on the page, will use wild card routing
+     */
     function index()
     {
         $this->data['pagebody'] = 'justone';	// this is the view we want shown

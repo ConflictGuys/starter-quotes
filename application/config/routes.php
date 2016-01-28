@@ -48,6 +48,8 @@ $route['last'] = 'last';
 $route['show/(:num)'] = "first/gimme/$1";
 
 $route['((comp)(\d{4}))/wisdom'] = "wise/bingo";
+
+//This function is used for link #6 and uses callback routing.
 $route['dunno'] = function ()
 {
     $source = "./data/CuteKitty.jpg";
