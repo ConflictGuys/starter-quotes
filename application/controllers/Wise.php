@@ -22,6 +22,9 @@ class Wise extends Application {
     //  The normal pages
     //-------------------------------------------------------------
 
+    /**
+     * This function is used for link #8 and uses regular routing.
+     */
     function bingo()
     {
         $this->data['pagebody'] = 'justone';	// this is the view we want shown

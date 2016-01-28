@@ -34,6 +34,9 @@ class Welcome extends Application {
 		$this->render();
 	}
 
+	/**
+	 * For adding fixing broken link #4 using wildcard routing.
+	 */
 	function shucks()
 	{
 		$this->data['pagebody'] = 'justone';	// this is the view we want shown

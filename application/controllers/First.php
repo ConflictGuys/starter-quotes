@@ -17,6 +17,11 @@ class First extends Application {
     //  The normal pages
     //-------------------------------------------------------------
 
+
+    /**
+     * Resolves broken link on #1 that is on the menu navigation bar
+     * that points to /first which use normal routing to link to the page.
+     */
     function index()
     {
         $this->data['pagebody'] = 'justone';	// this is the view we want shown
@@ -30,6 +35,9 @@ class First extends Application {
         $this->render();
     }
 
+    /**
+     * This function is used for link #3 and uses wildcard routing.
+     */
     function zzz()
     {
         $this->data['pagebody'] = 'justone';	// this is the view we want shown
@@ -43,6 +51,9 @@ class First extends Application {
         $this->render();
     }
 
+    /** This function is associated with the top right author image, and loads
+     *  their single quote view using wild card routing.
+     */
     function gimme($id)
     {
         $this->data['pagebody'] = 'justone'; // this is the view we want shown

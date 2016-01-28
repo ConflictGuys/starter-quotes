@@ -13,10 +13,10 @@ class Bingo extends Application {
         parent::__construct();
     }
 
-    //-------------------------------------------------------------
-    //  The normal pages
-    //-------------------------------------------------------------
-
+/**
+ * This function loads the bottom middle quote on the landing page,
+ * uses regular expression routing.
+ */
     function index()
     {
         $this->data['pagebody'] = 'justone'; // this is the view we want shown
