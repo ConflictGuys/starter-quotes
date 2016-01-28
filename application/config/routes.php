@@ -58,6 +58,7 @@ $route['dunno'] = function ()
     readfile($source);
 };
 
+$route['[a-z]{4}/bingo'] = "bingo/index";
 
 
 
